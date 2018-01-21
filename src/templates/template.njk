@@ -1,0 +1,23 @@
+{% import "./_macros/formMacros.njk" as forms %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{% block title %}Title{% endblock %} | D.D. Malliaros</title>
+
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+{% include "./_static/header.njk" %}
+{% block base %}{% endblock %}
+{% include "./_static/footer.njk" %}
+
+{% block javascripts %}
+    {{ forms.js_scripts('index') }}
+{% endblock %}
+</body>
+</html>

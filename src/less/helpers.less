@@ -1,0 +1,25 @@
+@import (less) "equal-height-columns.css";
+
+.mixin(@x) when (default()) {
+  .m-@{x}{margin:~"@{x}px";}
+  .mt-@{x}{margin-top:~"@{x}px";}
+  .mb-@{x}{margin-bottom:~"@{x}px";}
+  .ml-@{x}{margin-left:~"@{x}px";}
+  .mr-@{x}{margin-right:~"@{x}px";}
+
+
+  .p-@{x} {padding:~"@{x}px";}
+  .pt-@{x}{padding-top:~"@{x}px";}
+  .pb-@{x}{padding-bottom:~"@{x}px";}
+  .pl-@{x}{padding-left:~"@{x}px";}
+  .pr-@{x}{padding-right:~"@{x}px";}
+}
+.mixin(10);
+.mixin(20);
+.mixin(50);
+
+
+.rounded{
+  border-radius: .40rem;
+  padding: 15px;
+}
