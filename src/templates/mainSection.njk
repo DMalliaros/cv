@@ -35,11 +35,11 @@
             {% for data in experience.data %}
                 <div class="">
                     <div class="row mt-2">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             {{ data.position }}
                             <small>{{ data.positionExtra }}</small>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4 text-right">
                             {{ data.fromTo }}
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            {{ data.discretion }}
+                            {{ data.discretion | join(". ")  }}
                         </div>
                     </div>
                     <hr class="dl-horizontal">
@@ -76,6 +76,24 @@
                     <div class="row">
                         <div class="col-md-12">
                             {{ data }}
+                        </div>
+                    </div>
+                    <hr class="dl-horizontal">
+                </div>
+            {% endfor %}
+            <h2>
+                {{ education.title }}
+            </h2>
+            {% for data in education.data %}
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>
+                                <small>{{ data.fromTo }}</small> {{ data.title }}
+                            </h4>
+                            <div>
+                                {{ data.info }}
+                            </div>
                         </div>
                     </div>
                     <hr class="dl-horizontal">

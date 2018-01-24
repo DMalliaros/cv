@@ -2,19 +2,23 @@
     <div class="row">
         <div class="heading">
             <div class="col-md-10 col-md-offset-2">
-                {{ info.name }}<br>
-                {{ info.lastname }}<br>
+                <div class="my-name">
+                    <h1>
+                        {{ info.name }}<br>
+                        {{ info.lastname }}
+                    </h1>
+                </div>
                 <hr>
                 {#<span class="glyphicon glyphicon-phone"></span> {{ info.phone }}<br>#}
                 {#<span class="glyphicon glyphicon-envelope"></span> {{ info.email }}<br>#}
                 <span class="glyphicon glyphicon-home"></span> {{ info.address }}<br>
-                {{ info.address1 }}<br>
+                {#{{ info.address1 }}<br>#}
                 <hr>
-                <div class="small">
-                    {{ info.berth }}<br>
-                    {{ info.military }}<br>
-                    {{ info.license }}<br>
-                </div>
+                {#<div class="small">#}
+                    {#{{ info.berth }}<br>#}
+                    {#{{ info.military }}<br>#}
+                    {#{{ info.license }}<br>#}
+                {#</div>#}
             </div>
 
             {{ forms.asideBar(qualifications) }}

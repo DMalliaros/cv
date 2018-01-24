@@ -1137,7 +1137,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -6026,7 +6026,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6144,7 +6144,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6918,6 +6918,9 @@ h4 {
 .mainSection section .icon span {
   margin-top: 20px;
 }
+.mainSection section a {
+  color: #dde2e3;
+}
 .mainSection section.skills .icon .glyphicon {
   cursor: pointer;
 }
@@ -6940,3 +6943,5 @@ h4 {
 #myModal .cloud-js.jqcloud {
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=styles.css.map*/

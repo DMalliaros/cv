@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start:dev": "webpack --config webpack.config.js --env.dev --watch",
+    "start:prod": "webpack --config webpack.config.js --env.prod",
     "server:dev": "webpack-dev-server --env.dev"
   },
   "keywords": [],
