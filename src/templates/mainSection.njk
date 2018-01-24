@@ -9,15 +9,18 @@
             <div class="row">
             {% for skil in skils %}
                 {% set length = skil.data.length if skil.data.length < 4 else 4 %}
-                <div class="col-md-4 skills-data">
-                    <h3 class="header" data-toggle="modal" data-target="#myModal" data-skils="{{ skil.title }}">{{ skil.title }}</h3>
+                <div class="col-md-4 col-xs-6 skills-data">
+                    <h3 class="header">{{ skil.title }}</h3>
                     <ul>
                         {% for i in range(0, length) %}
                             <li>{{ skil.data[i][1] }}</li>
                         {% endfor %}
-                        <li><a class="more" href="#" data-toggle="modal" data-target="#myModal" data-skils="{{ skil.title }}">more...</a></li>
+                        <li class="hidden-sm hidden-xs"><a class="more" href="#" data-toggle="modal" data-target="#myModal" data-skils="{{ skil.title }}">more...</a></li>
                     </ul>
                  </div>
+                {% if loop.index % 2 == 0  %}
+                    <div class="clearfix visible-xs "></div>
+                {% endif %}
             {% endfor %}
             </div>
         </div>
