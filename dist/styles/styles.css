@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);/*!
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);/*!
  * jQCloud 2.0.3
  * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
  * Copyright 2013 Daniel White (http://www.developerdan.com)
@@ -6787,6 +6787,9 @@ button.close {
     display: none !important;
   }
 }
+.jqcloud {
+  font: 12px 'PT Sans', sans-serif;
+}
 /*
  * Row with equal height columns
  * --------------------------------------------------
@@ -6934,6 +6937,12 @@ h4 {
 .sidebar aside {
   background-color: #3c455c;
   color: #dde2e3;
+}
+.sidebar aside .icon {
+  color: #dde2e3;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 .sidebar aside .icon span {
   margin-top: 22px;

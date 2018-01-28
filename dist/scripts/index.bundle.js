@@ -10397,7 +10397,7 @@ function initModal($modal, mapOfSkills) {
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = [{"title":"Languages","data":[[10,"Groovy"],[8,"Java"],[8,"JavaScript"],[5,"PHP"],[8,"SQL"],[3,"Less"]]},{"title":"Databases","data":[[4,"Postgres"],[4,"Oracle"],[3,"MySQL"]]},{"title":"Cms","data":[[5,"Wordpress"],[6,"Apostrophe"],[4,"Joomla"],[4,"PrestaShop"],[3,"Magento"],[4,"Shopify"]]},{"title":"Frameworks","data":[[10,"Spring"],[5,"Play(Java)"],[7,"Jquery"],[4,"Android"],[5,"Bootstrap"],[8,"JPA"],[3,"AngularJS"],[4,"CodeIgniter"],[4,"DHTMLX (JavaScript)"]]},{"title":"Tools","data":[[5,"IntelliJ"],[5,"Git"],[2,"Bower"],[4,"Grunt"],[2,"Maven"],[5,"Gradle"],[4,"Jira"],[4,"Webpack"],[2,"Gulp"]]}]
+module.exports = [{"title":"Languages","data":[[10,"Groovy"],[8,"Java"],[8,"JavaScript"],[5,"PHP"],[4,"es6"],[8,"SQL"],[4,"Bash script"],[3,"Less"]]},{"title":"Databases","data":[[4,"Postgres"],[4,"Oracle"],[3,"MySQL"]]},{"title":"CMS","data":[[5,"Wordpress"],[6,"Apostrophe"],[4,"Joomla"],[4,"PrestaShop"],[3,"Magento"],[4,"Shopify"]]},{"title":"Frameworks","data":[[10,"Spring"],[5,"Play(Java)"],[7,"Jquery"],[4,"Android"],[5,"Bootstrap"],[8,"JPA"],[3,"AngularJS"],[4,"CodeIgniter"],[4,"DHTMLX (JavaScript)"]]},{"title":"Tools","data":[[5,"IntelliJ"],[5,"Git"],[4,"Webpack"],[4,"Grunt"],[3,"Maven"],[5,"Gradle"],[4,"Jira"],[2,"Bower"],[3,"Ansible"],[2,"Gulp"]]}]
 
 /***/ }),
 /* 3 */
