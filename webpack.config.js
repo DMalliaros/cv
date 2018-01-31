@@ -24,7 +24,7 @@ const extractNunjucks = new NunjucksWebpackPlugin({
         {
             from: path.join(__dirname, 'src/templates', 'index.njk')
             ,to: path.resolve(__dirname, 'index.html')
-            , context: _.extend(jsonContext, {skils:jsonSkills})
+            , context: _.extend(jsonContext, {skills:jsonSkills})
             , writeToFileEmit: true
         }
     ]

@@ -1,0 +1,40 @@
+<section class="rounded seminars mt-20" >
+    <div class="row">
+        <div class="col-md-2 icon">
+            <span class="glyphicon glyphicon-book"></span>
+        </div>
+        <div class="col-md-9">
+            <h2>
+                {{ seminars.title }}
+            </h2>
+            {% for data in seminars.data %}
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ data[0] }}, {{ data[1] }}
+                        </div>
+                    </div>
+                    <hr class="dl-horizontal">
+                </div>
+            {% endfor %}
+            <h2>
+                {{ education.title }}
+            </h2>
+            {% for data in education.data %}
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>
+                                {{ data.fromTo }}, {{ data.title }}
+                            </h4>
+                            <div>
+                                {{ data.info }}
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="dl-horizontal">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     let mapOfSkills = {} ;
     mapOfSkills["all"] = []
-    _.each(skills,function (skill) {
+    _.each(skills.data,function (skill) {
         mapOfSkills[skill.title] = []
         _.each(skill.data,function (data) {
             let sk = {
@@ -41,8 +41,7 @@ function initModal($modal, mapOfSkills) {
     $modal.on('shown.bs.modal', function (event) {
 
         let button = $(event.relatedTarget)
-            , data =  button.data('skils');
-
+            , data =  button.data('skills');
         cloudejQCloud = $cloude.jQCloud(mapOfSkills[data],{
             width: 720 ,
             height: 400

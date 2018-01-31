@@ -1,0 +1,38 @@
+<section class="rounded experience mt-20">
+    <div class="row">
+        <div class="col-md-2 icon">
+            <span class="glyphicon glyphicon-briefcase"></span>
+        </div>
+        <div class="col-md-9">
+            <h2>
+                {{ experience.title }}
+            </h2>
+            {% for data in experience.data %}
+                <div class="">
+                    <div class="row mt-2">
+                        <div class="col-md-8 position">
+                            {{ data.position }}
+                            <small>{{ data.positionExtra }}</small>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            {{ data.fromTo }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{ data.companyUrl }}" target="_blank">
+                                 - {{ data.company }}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ data.discretion | join(". ")  }}
+                        </div>
+                    </div>
+                    <hr class="dl-horizontal">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
