@@ -1,11 +1,14 @@
 .mainSection{
   section{
     background-color: @color-1;
+    color: @color;
     .icon{
       text-align: center;
       font-size: 20px;
-     span{
-       margin-top: 20px;
+      padding-top: 20px;
+     .iconmoon{
+       font-size: 30px;
+       color: @color;
      }
     }
     a {
@@ -24,6 +27,18 @@
       .skills-data{
         .more{
           cursor: pointer;
+          color: @color-2;
+          text-decoration: underline;
+        }
+      }
+    }
+    &.experience{
+      .position{
+        font-size: 18px;
+      }
+      .company{
+        a{
+          color: @color-2;
         }
       }
     }

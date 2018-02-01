@@ -1,9 +1,9 @@
 <section class="rounded seminars mt-20" >
     <div class="row">
         <div class="col-md-2 icon">
-            <span class="glyphicon glyphicon-book"></span>
+            <span class="iconmoon icon-certifications"></span>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 col-md-push-1">
             <h2>
                 {{ seminars.title }}
             </h2>
@@ -14,9 +14,14 @@
                             {{ data[0] }}, {{ data[1] }}
                         </div>
                     </div>
-                    <hr class="dl-horizontal">
+                    {#<hr class="dl-horizontal">#}
                 </div>
             {% endfor %}
+        </div>
+        <div class="col-md-2 icon">
+            <span class="iconmoon icon-education"></span>
+        </div>
+        <div class="col-md-9 col-md-push-1">
             <h2>
                 {{ education.title }}
             </h2>
