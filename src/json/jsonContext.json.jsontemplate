@@ -1,0 +1,100 @@
+{
+  "general": {
+    "dist": "/cv/dist"
+  },
+  "info": {
+    "name": "Name",
+    "lastname": "Lastname",
+    "address": "Address",
+    "address1": "Address More",
+    "berth": "01/01/2000",
+    "phone": "123456789",
+    "email": "email@email.com",
+    "military": "Military",
+    "license": "License",
+    "linkedin": "https://www.linkedin.com/in/....",
+    "github": "https://github.com/...."
+  },
+  "qualifications": {
+    "icon": "user",
+    "title": "Qualifications",
+    "data": [
+      "Qualifications 1",
+      "Qualifications 2",
+      "Qualifications 3",
+      "Qualifications 4"
+    ]
+  },
+  "experience": {
+    "title": "Working Experience",
+    "data": [
+      {
+        "position": "Position Title ",
+        "positionExtra": "more for the position",
+        "company": "Organization",
+        "companyUrl": "http://organization.com",
+        "fromTo": "Month Year – Month Year",
+        "discretion": [
+          "With your next-most recent position, describe your experience, skills, and resulting outcomes in bullet ",
+          "Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements. ",
+          "Quantify where possible.",
+          ""
+        ]
+      },
+      {
+        "position": "Position Title ",
+        "positionExtra": "more for the position",
+        "company": "Organization",
+        "companyUrl": "http://organization.com",
+        "fromTo": "Month Year – Month Year",
+        "discretion": [
+          "With your next-most recent position, describe your experience, skills, and resulting outcomes in bullet ",
+          "Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements. ",
+          "Quantify where possible.",
+          ""
+        ]
+      }
+    ]
+  },
+  "seminars": {
+    "title": "Certifications & Seminars",
+    "data": [
+      [
+        "Month Year – Month Year",
+        "Title"
+      ],
+      [
+        "Month Year – Month Year",
+        "Title"
+      ],
+      [
+        "Month Year – Month Year",
+        "Title"
+      ],
+      [
+        "Month Year – Month Year",
+        "Title"
+      ]
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "data": [
+      {
+        "title": "Title",
+        "fromTo": "Year - Year",
+        "info": "More info for education"
+      }
+    ]
+  },
+  "interests": {
+    "icon": "send",
+    "title": "Interests",
+    "data": [
+      "Interest 1",
+      "Interest 2",
+      "Interest 3",
+      "Interest 4"
+    ]
+  }
+}
