@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/cv/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
@@ -30557,4 +30557,4 @@ $.fn.jQCloud.defaults = {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=index.bundle.js.map
+//# sourceMappingURL=index.a555581f54f9b2deb4c6.js.map

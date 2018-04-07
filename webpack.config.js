@@ -1,29 +1,24 @@
-const path = require('path');
-const resolve = path.resolve;
-const webpack = require('webpack');
-const NunjucksWebpackPlugin = require( "nunjucks-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path')
+	,resolve = path.resolve
+	,webpack = require('webpack')
+	,NunjucksWebpackPlugin = require( "nunjucks-webpack-plugin")
+	,ExtractTextPlugin = require("extract-text-webpack-plugin")
+	,ChunkHashReplacePlugin = require('chunkhash-replace-webpack-plugin')
+	,CopyWebpackPlugin = require('copy-webpack-plugin')
+	,jsonContext = require('./src/json/jsonContext.json')
+	,jsonSkills = require('./src/json/skills.json')
+    ,CleanWebpackPlugin = require('clean-webpack-plugin')
+	,_ =  require('lodash')
+    , outpupFolder = path.join(__dirname, 'dist')
+    , tmpFolder = path.join(__dirname, 'tmp');
 
-
-const jsonContext = require('./src/json/jsonContext.json');
-const jsonSkills = require('./src/json/skills.json');
-
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
-const _ =  require('lodash');
-
-const extractLess =  new ExtractTextPlugin({ // Extracrs the compiled styles from their bundled js module to a .css file
-    filename: 'styles/styles.css',
-    disable: false,
-    allChunks: true
-});
 
 const extractNunjucks = new NunjucksWebpackPlugin({
 
     templates: [
         {
             from: path.join(__dirname, 'src/templates', 'index.njk')
-            ,to: path.resolve(__dirname, 'index.html')
+            ,to: path.resolve(__dirname, 'tmp/index.html')
             , context: _.extend(jsonContext, {skills:jsonSkills})
             , writeToFileEmit: true
         }
@@ -38,8 +33,9 @@ module.exports = env => {
             index: './src/js/index.js'
         }
         , output: {
-            filename: 'scripts/[name].bundle.js',
-            path: path.join(__dirname, 'dist')
+            filename: `[name]${env.prod?'.[chunkhash]':''}.js`,
+            path: outpupFolder
+            ,publicPath: '/cv/dist/',
         }
         , resolve: {
             alias: {
@@ -74,18 +70,29 @@ module.exports = env => {
                 }
                 , {
                     test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.png($|\?)/,
-                    loader: 'file-loader?publicPath=../&name=./fonts/[hash].[ext]'
+                    loader: 'file-loader?publicPath=../dist/&name=./fonts/[hash].[ext]'
                 }
 
             ]
         }
         , plugins: [
-            new webpack.ProvidePlugin({
+            new CleanWebpackPlugin( outpupFolder )
+            , new CleanWebpackPlugin( tmpFolder )
+            , new webpack.ProvidePlugin({
                 $: "jquery"
                 , jQuery: "jquery"
             })
-            , extractLess
+
             , extractNunjucks
+            , new ChunkHashReplacePlugin({
+                src: 'tmp/index.html',
+                dest: 'index.html',
+            })
+            , new ExtractTextPlugin({ // Extracrs the compiled styles from their bundled js module to a .css file
+                filename: `styles${env.prod?'.[chunkhash]':''}.css`,
+                disable: false,
+                allChunks: true
+            })
             , new CopyWebpackPlugin([
                 {from: 'src/img/favicon.ico', to: './'}
                 , {from: 'src/img/', to: 'img'}
