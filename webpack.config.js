@@ -33,7 +33,7 @@ module.exports = env => {
             index: './src/js/index.js'
         }
         , output: {
-            filename: `[name]${env.prod?'.[chunkhash]':''}.js`,
+            filename: `scripts/[name]${env.prod?'.[chunkhash]':''}.bundle.js`,
             path: outpupFolder
             ,publicPath: '/cv/dist/',
         }
@@ -70,7 +70,7 @@ module.exports = env => {
                 }
                 , {
                     test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.png($|\?)/,
-                    loader: 'file-loader?publicPath=../dist/&name=./fonts/[hash].[ext]'
+                    loader: 'file-loader?publicPath=../&name=./fonts/[hash].[ext]'
                 }
 
             ]
@@ -89,7 +89,7 @@ module.exports = env => {
                 dest: 'index.html',
             })
             , new ExtractTextPlugin({ // Extracrs the compiled styles from their bundled js module to a .css file
-                filename: `styles${env.prod?'.[chunkhash]':''}.css`,
+                filename: `styles/styles${env.prod?'.[chunkhash]':''}.css`,
                 disable: false,
                 allChunks: true
             })

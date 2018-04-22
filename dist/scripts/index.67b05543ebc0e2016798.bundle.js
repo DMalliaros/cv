@@ -30557,4 +30557,4 @@ $.fn.jQCloud.defaults = {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=index.a555581f54f9b2deb4c6.js.map
+//# sourceMappingURL=index.67b05543ebc0e2016798.bundle.js.map
