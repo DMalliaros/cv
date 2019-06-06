@@ -21,8 +21,8 @@ npm install
 
 Copy the following files
 
-* src/json/jsonContext.json.jsontemplate --> src/json/jsonContext.json 
-* src/json/skills.json.jsontemplate --> src/json/skills.json 
+* src/json/jsonContext.json.json.template --> src/json/jsonContext.json 
+* src/json/skills.json.json.template --> src/json/skills.json 
 
 This files have all the data of the site.
 
@@ -42,7 +42,7 @@ Or if you want to run production mode to make chunk hash at js and css files
 npm run start:prod
 ```
 
-To start a local http server run the follow
+To start a local http server run the follow. This will start a local in port 9000
 ```
 npm run server:dev
 ```
