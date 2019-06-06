@@ -15,6 +15,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "chunkhash-replace-dm-webpack-plugin": "0.1.2",
+    "chunkhash-replace-webpack-plugin": "0.0.24",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.3.1",
     "css-loader": "^0.28.8",
