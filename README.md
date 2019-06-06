@@ -42,11 +42,11 @@ Or if you want to run production mode to make chunk hash at js and css files
 npm run start:prod
 ```
 
-To start a local http server run the follow. This will start a local in port 9000
+To start a local http server run the follow.
 ```
 npm run server:dev
 ```
-
+After the server run check [localhost:9000](http://localhost:9000/)
 
 ## Built With
 
