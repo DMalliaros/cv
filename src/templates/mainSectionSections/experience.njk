@@ -9,15 +9,6 @@
             </h2>
             {% for data in experience.data %}
                 <div class="">
-                    <div class="row mt-2">
-                        <div class="col-md-8 position">
-                            {{ data.position }}
-                            <small>{{ data.positionExtra }}</small>
-                        </div>
-                        <div class="col-md-4 text-right">
-                            {{ data.fromTo }}
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-md-12 company">
                             <a href="{{ data.companyUrl }}" target="_blank">
@@ -25,12 +16,22 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            {{ data.discretion | join(". ")  }}
+                    {% for discretion in data.discretion %}
+                        <div class="row mt-2">
+                            <div class="col-md-8">
+                                {{ discretion.position }}
+                            </div>
+                            <div class="col-md-4 text-right">
+                                {{ discretion.fromTo }}
+                            </div>
                         </div>
-                    </div>
-                    <hr class="dl-horizontal">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{ discretion.title  }}
+                            </div>
+                        </div>
+                        <hr class="dl-horizontal">
+                    {% endfor %}
                 </div>
             {% endfor %}
         </div>
