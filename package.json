@@ -22,9 +22,9 @@
     "file-loader": "^1.1.6",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "nunjucks": "^3.0.1",
-    "nunjucks-loader": "^2.4.8",
-    "nunjucks-webpack-plugin": "^4.0.0",
+    "nunjucks": "^3.2.3",
+    "nunjucks-loader": "^3.0.0",
+    "nunjucks-webpack-plugin": "^5.0.0",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
