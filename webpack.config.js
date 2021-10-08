@@ -29,6 +29,7 @@ const extractNunjucks = new NunjucksWebpackPlugin({
 module.exports = env => {
     return {
         context: resolve('')
+        , mode: env.prod ? 'production' : 'development'
         , entry: {
             index: './src/js/index.js'
         }
@@ -55,6 +56,7 @@ module.exports = env => {
                 {
                     test: /\.js$/,
                     loader: 'babel-loader',
+                    type: 'javascript/auto',
                     options: {
                         presets: ['env']
                     },
