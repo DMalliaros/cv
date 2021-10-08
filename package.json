@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jqcloud2": "^2.0.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.4",
     "webpack": "^3.10.0"
   },
