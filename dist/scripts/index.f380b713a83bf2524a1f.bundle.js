@@ -11015,7 +11015,7 @@ function initModal($modal, mapOfSkills) {
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = {"title":"Skills","data":[{"title":"Languages","data":[[10,"Java"],[8,"Groovy"],[8,"JavaScript"],[6,"Python"],[4,"PHP"],[4,"es6"],[8,"SQL"],[4,"Bash script"],[3,"Less"]]},{"title":"Databases","data":[[8,"Postgres"],[6,"DynamoDB"],[4,"Oracle"],[3,"MySQL"]]},{"title":"Frameworks","data":[[10,"Spring"],[5,"Flink"],[3,"Play(Java)"],[6,"React js"],[5,"Bootstrap"],[8,"JPA"]]},{"title":"Tools","data":[[6,"Jenkins"],[6,"IntelliJ"],[5,"Gradle"],[5,"Git"],[3,"Maven"],[4,"Jira"],[3,"Ansible"]]},{"title":"AWS","data":[[9,"Lambda"],[9,"API Gateway"],[6,"Data Analytics"],[9,"IAM"],[5,"SQS"],[5,"EC2"],[8,"CDK"],[4,"SNS"],[2,"Step Functions"]]}]}
+module.exports = {"title":"Skills","data":[{"title":"Languages","data":[[10,"Java"],[8,"Groovy"],[8,"JavaScript"],[6,"Python"],[4,"PHP"],[4,"es6"],[8,"SQL"],[4,"Bash script"],[3,"Less"]]},{"title":"Databases","data":[[8,"Postgres"],[6,"DynamoDB"],[4,"Oracle"],[3,"MySQL"]]},{"title":"Frameworks","data":[[10,"Spring"],[5,"Flink"],[3,"Play(Java)"],[6,"React js"],[5,"Bootstrap"],[8,"JPA"]]},{"title":"Tools","data":[[6,"Jenkins"],[6,"IntelliJ"],[6,"Docker"],[5,"Gradle"],[5,"Git"],[3,"Maven"],[4,"Jira"],[3,"Ansible"]]},{"title":"AWS","data":[[9,"Lambda"],[9,"API Gateway"],[6,"Data Analytics"],[9,"IAM"],[5,"SQS"],[5,"EC2"],[8,"CDK"],[4,"SNS"],[2,"Step Functions"]]}]}
 
 /***/ }),
 /* 3 */
@@ -31301,4 +31301,4 @@ $.fn.jQCloud.defaults = {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=index.338456f1d50fc366f92b.bundle.js.map
+//# sourceMappingURL=index.f380b713a83bf2524a1f.bundle.js.map
