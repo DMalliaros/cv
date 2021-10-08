@@ -29,29 +29,25 @@
     "title": "Working Experience",
     "data": [
       {
-        "position": "Position Title ",
-        "positionExtra": "more for the position",
         "company": "Organization",
         "companyUrl": "http://organization.com",
-        "fromTo": "Month Year – Month Year",
         "discretion": [
-          "With your next-most recent position, describe your experience, skills, and resulting outcomes in bullet ",
-          "Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements. ",
-          "Quantify where possible.",
-          ""
+          {
+            "position": "Position Title",
+            "fromTo": "Month Year – Month Year",
+            "title": "ith your next-most recent position, describe your experience, skills, and resulting outcomes in bullet "
+          }
         ]
-      },
+      }
       {
-        "position": "Position Title ",
-        "positionExtra": "more for the position",
         "company": "Organization",
         "companyUrl": "http://organization.com",
-        "fromTo": "Month Year – Month Year",
         "discretion": [
-          "With your next-most recent position, describe your experience, skills, and resulting outcomes in bullet ",
-          "Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements. ",
-          "Quantify where possible.",
-          ""
+          {
+            "position": "Position Title",
+            "fromTo": "Month Year – Month Year",
+            "title": "ith your next-most recent position, describe your experience, skills, and resulting outcomes in bullet "
+          }
         ]
       }
     ]
@@ -59,22 +55,26 @@
   "seminars": {
     "title": "Certifications & Seminars",
     "data": [
-      [
-        "Month Year – Month Year",
-        "Title"
-      ],
-      [
-        "Month Year – Month Year",
-        "Title"
-      ],
-      [
-        "Month Year – Month Year",
-        "Title"
-      ],
-      [
-        "Month Year – Month Year",
-        "Title"
-      ]
+      {
+        "fromTo": "Month Year – Month Year",
+        "title": "Title 0"
+      },
+      {
+        "fromTo": "Month Year – Month Year",
+        "title": "Title 1"
+      },
+      {
+        "fromTo": "Month Year – Month Year",
+        "title": "Title 2"
+      },
+      {
+        "fromTo": "Month Year – Month Year",
+        "title": "Title 3"
+      },
+      {
+        "fromTo": "Month Year – Month Year",
+        "title": "Title 4"
+      },
     ]
   },
   "education": {
